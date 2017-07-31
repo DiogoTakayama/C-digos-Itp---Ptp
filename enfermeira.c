@@ -19,6 +19,6 @@ if (h1 > h2 || (h1==h2 && (m1>m2))){
     tempo2+=1440;
 }
 printf("%i",tempo2 - tempo1);
-main ();
+
 return 0;
 }
