@@ -1,22 +1,39 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
-	int divisores = 0,numPrimo,i;
+	int divisores = 0,numPrimo,i=1;
+
+
 scanf ("%d",&numPrimo);
-	for ( i = 1; i <= numPrimo; ++i)
-	{
-		
-if (numPrimo%i ==0)
-{
-	divisores++;
+if (numPrimo <= 0){
+	
+	printf("Numero negativo ou zero digite un inteiro positivo!!\n");
+	exit(EXIT_SUCCESS);
+
 }
+
+if (numPrimo == 1){
+	printf("Nao Eh Primo!!\n");
+	exit(EXIT_SUCCESS);
+}
+
+	while (i <= numPrimo){
+		
+		
+if (numPrimo%i ==0){
+	divisores++;
+
+}
+
+
+i++;
 
 	}
 
 
 
-if (divisores==2)
-{
+if (divisores==2){
 
 	printf("Eh Primo\n");
 	
